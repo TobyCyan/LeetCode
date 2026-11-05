@@ -8,7 +8,7 @@ class Solution:
         
         @cache
         def dp(i, robbedFirstDay):
-            if i >= n or i == n - 1 and robbedFirstDay:
+            if i >= n or (i == n - 1 and robbedFirstDay):
                 return 0
             
             firstDay = i == 0
