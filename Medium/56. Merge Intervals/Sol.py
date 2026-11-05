@@ -6,6 +6,7 @@ class Solution:
         start, furthest = intervals[0][0], intervals[0][1]
         for i in range(1, len(intervals)):
             curr = intervals[i]
+            # An overlap.
             if curr[0] <= furthest:
                 furthest = max(furthest, curr[1])
             else:
