@@ -3,7 +3,7 @@ class Solution:
         if num < 0:
             return False
         
-        l, r, ans = 0, num, 0
+        l, r = 0, num
 
         while l <= r:
             mid = l + (r - l) // 2
